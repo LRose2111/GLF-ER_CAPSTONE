@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.ListingActions),
-    path('', views.ReviewActions),
+    path('<str:id>/', views.ReviewActions),
+    
     
 ]

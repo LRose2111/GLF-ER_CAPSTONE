@@ -24,9 +24,17 @@ def ListingActions(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET'])
-@permission_classes([AllowAny])
-def ReviewActions(request):
-    reviews = Review.objects.all()
-    serializer = ReviewSerializer(reviews, many=True)
-    return Response(serializer.data)
+
+@api_view(["GET", "POST"])
+@permission_classes([IsAuthenticated])
+def ReviewActions(request, id):
+    if request.method == "GET":
+        review = Review.objects.filter(listing_id = id)
+        serializer = ReviewSerializer(review, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    elif request.method == "POST":
+        serializer = ReviewSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(user=request.user, listing_id = id)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
