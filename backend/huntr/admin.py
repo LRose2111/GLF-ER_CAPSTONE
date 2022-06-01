@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Listing, Review, Reply
 
-# Register your models here.
+admin.site.register(Listing) 
+admin.site.register(Review) 
+admin.site.register(Reply) 
