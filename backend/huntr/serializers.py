@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ListingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Listing
-        fields = ['id', 'user', 'name', 'address', 'city', 'state', 'zipcode', 'likes', 'dislikes']
+        fields = ['id', 'user', 'name', 'city', 'state', 'zipcode', 'likes', 'dislikes']
         depth = 1
 
 
