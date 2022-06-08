@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
     'cars.apps.CarsConfig',
-    'huntr'  # This app is for example use only
+    'golf'
+      # This app is for example use only
 ]
 
 MIDDLEWARE = [
