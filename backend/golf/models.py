@@ -34,4 +34,4 @@ class Payment(models.Model):
 class Scrambles(models.Model):
     date = models.CharField(max_length=50)
     location = models.CharField(max_length=100)
-    link = models.URLField(max_length=255)
+    

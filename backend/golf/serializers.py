@@ -41,5 +41,5 @@ class ReplySerializer(serializers.ModelSerializer):
 class ScramblesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Scrambles
-        fields = ['id', 'date', 'location', 'link']
+        fields = ['id', 'date', 'location']
         depth = 1
