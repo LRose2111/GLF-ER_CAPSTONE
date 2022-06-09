@@ -1,0 +1,48 @@
+.likes-overall-contain{
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    width: 380px;
+    margin-left: 3.5rem;
+    border-radius: 20px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    border-style:solid;
+    border-color: darkred;
+    margin-left: 38rem;
+}
+
+.like-or-dis-text{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.likes-contain-flex{
+    display: flex;
+    margin-top: .6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-button{
+    padding: 0px 2px;
+    background-color: black;
+    color: darkred;
+    margin-left: 1rem;
+    border-color: black;
+    border-radius: 5px;
+    
+}
+
+.dislike-button{
+    padding: 0px 2px;
+    background-color: black;
+    color: darkred;
+    margin-left: .6rem;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.like-size-bg{
+    font-size: 17px;
+}

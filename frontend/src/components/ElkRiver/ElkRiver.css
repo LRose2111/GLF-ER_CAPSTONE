@@ -1,0 +1,35 @@
+.elkriver-image{
+    height: 300px;
+    width: 490px;
+    border-radius: 25px;
+    box-shadow: 4px 2px 5px black;
+}
+
+.elkriver-title{
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 4.2%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+ }
+
+.elkriver-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: red; */
+    column-gap: 7.3rem;
+    margin-top: 7rem;
+}
+
+.elkriver-image-contain{
+    margin-left: 15.3rem;
+    margin-top: 2.6rem;
+}
+
+ .elkriver-map-contain{
+     max-width: 550px;
+     margin-top: 2.6rem;
+ }
