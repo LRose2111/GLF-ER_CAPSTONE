@@ -1,0 +1,60 @@
+.schedule-title{
+    color: black;
+    margin: 0;
+    position: fixed;
+    top: 4.2%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+ }
+
+
+ .calendar-contain{
+     margin-left: 4rem;
+     width: 1000px;
+ }
+
+ .fullcalen-contain{
+     display: flex;
+     margin-top: 9rem;
+ }
+
+ .event-contain{
+     background-color: ghostwhite;
+     margin-left: 5rem;
+     margin-top: 5rem;
+     padding-right: 2rem;
+     height: 500px;
+     border-radius: 15px;
+ }
+
+ .event-background{
+     background-color: gold;
+     width: 204px;
+     font-size: 15px;
+     text-align: center;
+     margin-left: 1.6rem;
+     border-radius: 10px;
+     margin-bottom: 1.1rem;
+     font-weight: bold;
+
+ }
+
+ .event-title-bg{
+     margin-top: 0.3rem;
+    margin-left: 6rem;
+    margin-bottom: 0.5rem;
+     
+ }
+
+ .course-title-event{
+     font-size: 18px;
+     font-weight: bold;
+     color: white;
+ }
+
+ li {
+     cursor: pointer;
+     list-style-type: none;
+ }
