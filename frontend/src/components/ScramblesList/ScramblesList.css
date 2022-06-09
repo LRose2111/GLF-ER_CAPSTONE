@@ -1,0 +1,14 @@
+.scram-title{
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 4.4%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+ }
+
+ .scram-contain{
+     margin-top: 9rem;
+ }
