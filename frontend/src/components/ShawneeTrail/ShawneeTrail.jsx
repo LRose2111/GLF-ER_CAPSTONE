@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import './ElkRiver.css';
+import './ShawneeTrail.css';
 import { Link } from "react-router-dom";
 import ElkRiverMap from "../GoogleMaps/ElkRiver";
 import axios from "axios";
-import CommentForm from "../../components/CommentForm/CommentForm";
+import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
-import LikeIndicator from "../LikeIndicator/LikeIndicator";
 import useAuth from "../../hooks/useAuth";
 
 const ElkRiver = () => {
@@ -85,7 +84,7 @@ const ElkRiver = () => {
     return ( 
         <div className="entire-contain">
           <div>
-              <div><h3 className="elkriver-title">Elk River Country Club</h3></div>
+              <div><h3 className="elkriver-title">Shawnee Trail Conservation Area</h3></div>
           </div>
         <div className="elkriver-contain">
             <div className="elkriver-image-contain">
@@ -97,7 +96,7 @@ const ElkRiver = () => {
         </div>
         <div>
         <div>
-            <LikeIndicator postLike = {postLike} postDisLike = {postDisLike} course = {course} getCourse = {getCourse}/></div>
+        </div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>

@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./ElkRiverPage.css";
 import SideBar from "../../components/SideBar/SideBar";
-import ElkRiver from "../../components/ElkRiver/ElkRiver";
+import ElkRiver from "../../components/ShawneeTrail/ShawneeTrail";
 
 
 const ElkRiverPage = () => {

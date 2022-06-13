@@ -5,7 +5,7 @@
     border-radius: 10px;
     margin-left: 33.5rem;
     margin-bottom: 1rem;
-    box-shadow: 4px 2px 5px red;
+    box-shadow: 4px 2px 5px gold;
   }
   
   .list-text {
@@ -16,6 +16,6 @@
   }
 
   .orange-text{
-      color: red;
+      color: gold;
   }
   

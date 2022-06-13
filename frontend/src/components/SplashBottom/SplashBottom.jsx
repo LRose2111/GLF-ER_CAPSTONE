@@ -10,31 +10,31 @@ const SplashBottom = () => {
 
     return ( 
         <div>
-            <div className='about-us-title' id='aboutsite'>ABOUT THE GOLF SITE</div>
+            <div className='about-us-title' id='aboutsite'>ABOUT THE HUNTR SITE</div>
             <div className='splash-bottom-contain'>
                 <div className='golf-video'>
                     <div className='video-padding'>
                         <iframe id="ytplayer" type="text/html" width="460" height="320"
-                            src="https://www.youtube.com/embed/2uHxFADN2rI"
+                            src="https://www.youtube.com/embed/_ka8GmtCeWI"
                             frameborder="0">
                         </iframe>
                     </div>
                 </div>
                 <div className='splash-bottom-text-contain'>
-                    <div className='smaller-title-about'>GOLFR | Schedule Golf Scrambles in the Area</div>
+                    <div className='smaller-title-about'>HUNTR | View And Book Hunts In SW Missouri</div>
                 
-                    <div className='about-description'>GOLFR was established in 2022 as part of a devCodeCamp capstone project and a
-                        site for bringing golf enthusiasts together who want to compete. 
+                    <div className='about-description'>HUNTR was established in 2022 as part of a devCodeCamp capstone project and a
+                        site for bringing outdoor enthusiasts together. 
                     </div>
                     <div className='features-header'>
                         Features
                     </div>
                     <div className='features-list'>
-                        <medium className = 'features-font'>- Schedule Courses</medium>
-                        <medium className = 'features-font'>- Share comments about the Courses</medium>
-                        <medium className = 'features-font'>- Watch Golf Videos</medium>
-                        <medium className = 'features-font'>- View Scramble Listings</medium>
-                        <medium className = 'features-font'>- View Golf News</medium>
+                        <medium className = 'features-font'>- Schedule Hunts</medium>
+                        <medium className = 'features-font'>- Share comments about the Listings</medium>
+                        <medium className = 'features-font'>- Watch Hunting Videos</medium>
+                        <medium className = 'features-font'>- View Local Listings</medium>
+                        <medium className = 'features-font'>- View Hunting News</medium>
                     </div>
                 </div>
             </div>

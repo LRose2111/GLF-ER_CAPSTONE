@@ -9,6 +9,12 @@
    
     width: 790px;
 }
+.about-me-pic{
+    height: 261px;
+    border-radius: 125px;
+    border-style: solid;
+    box-shadow: 4px 2px 5px darkgrey;
+}
 
 .about-title{
     color: white;
@@ -33,7 +39,7 @@
 
  .list-shade{
      font-weight: bold;
-     box-shadow: darkred;
+     box-shadow: darkgrey;
      width: 135px;
      border-radius: 10px;
      margin-bottom: .5rem;
@@ -41,7 +47,7 @@
 
  .list-shade-lg{
      font-weight: bold;
-     box-shadow: darkred;
+     box-shadow: darkgrey;
      width: 154.5px;
      border-radius: 10px;
      margin-bottom: .5rem;

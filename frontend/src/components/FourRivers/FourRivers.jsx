@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import './PatriciaIsland.css';
+import './FourRivers.css';
 import { Link } from "react-router-dom";
 import PatriciaIslandMap from "../GoogleMaps/PatriciaIslandMap";
 import axios from "axios";
-import CommentForm from "../../components/CommentForm/CommentForm";
+import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
-import LikeIndicator from "../LikeIndicator/LikeIndicator";
 import useAuth from "../../hooks/useAuth";
 
 const PatricaIsland = () => {
@@ -85,7 +84,7 @@ const PatricaIsland = () => {
     return ( 
         <div className="entire-contain">
           <div>
-              <div><h3 className="pi-title">Patrica Island Golf Club</h3></div>
+              <div><h3 className="pi-title">Four Rivers Conservation Area</h3></div>
           </div>
         <div className="pi-contain">
             <div className="pi-image-contain">
@@ -97,7 +96,7 @@ const PatricaIsland = () => {
         </div>
         <div>
         <div>
-            <LikeIndicator postLike = {postLike} postDisLike = {postDisLike} course = {course} getCourse = {getCourse}/></div>
+        </div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>

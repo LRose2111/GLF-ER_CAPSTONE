@@ -4,60 +4,60 @@ import './VideosList.css';
 const VideosList = () => {
     return ( 
         <div className="entire-contain">
-            <div className="vid-title-contain-trans"><h3 className="videos-title">Golf Videos</h3></div>
+            <div className="vid-title-contain-trans"><h3 className="videos-title">Hunting Videos</h3></div>
             <div className="videolist-contr">
                 <div className="pervideo-container">
                     <iframe className="iframe-border" id="ytplayer" type="text/html" width="410" height="270"
-                        src="https://www.youtube.com/embed/2uHxFADN2rI"
+                        src="https://www.youtube.com/embed/8VoMEG1hMH0"
                         frameborder="0">
                     </iframe>
                     <div className="vid-contain">
-                        <p className="video-text">We Challenged Top D1 Commits To A Golf Match… Who Wins?</p>
+                        <p className="video-text">What Choke Tubes do you need for Duck and Goose Hunting?</p>
                     </div>
                 </div>
                 <div className="pervideo-container">
                     <iframe className="iframe-border" id="ytplayer" type="text/html" width="410" height="270"
-                        src="https://www.youtube.com/embed/PbNa9V7MwK0"
+                        src="https://www.youtube.com/embed/g8-M6-uLPHM"
                         frameborder="0">
                     </iframe>
                     <div className="vid-contain">
-                        <p className="video-text">3v3 18 Hole Scramble | Tiger Woods Course Payne's Valley | Part 1</p>
+                        <p className="video-text">Big Water Diver Duck Hunt with Bonus King Canvasback!!</p>
                     </div>
                 </div>
                 <div className="pervideo-container">
                     <iframe className="iframe-border" id="ytplayer" type="text/html" width="410" height="270"
-                        src="https://www.youtube.com/embed/PhzSfTS942k"
+                        src="https://www.youtube.com/embed/T8nTYAf1OLg"
                         frameborder="0">
                     </iframe>
                     <div className="vid-contain">
-                         <p className="video-text">Rickie Fowler on Playing for Saudi League, Tiger Woods, His Game Going Downhill | FULL SEND </p>
+                         <p className="video-text">1000's of Birds Landed in My Decoys But a Very Special One Didn't Make it Out... </p>
                     </div>
                 </div>
                 <div className="pervideo-container">
                     <iframe className="iframe-border" id="ytplayer" type="text/html" width="410" height="270"
-                        src="https://www.youtube.com/embed/10j5LpGguy4"
+                        src="https://www.youtube.com/embed/asDOC5aseUQ"
                         frameborder="0">
                     </iframe>
                     <div className="vid-contain">
-                        <p className="video-text">Rick Shiels own golf clubs Vs Tour Pro package set</p>
+                        <p className="video-text">Shooting Nothing but Beautiful Adult Birds.. I'm Mounting All of Them!!</p>
                     </div>
                 </div>
                 <div className="pervideo-container">
                     <iframe className="iframe-border" id="ytplayer" type="text/html" width="410" height="270"
-                        src="https://www.youtube.com/embed/BgK37qPqV50"
+                        src="https://www.youtube.com/embed/wVnf_IAUfe8"
                         frameborder="0">
                     </iframe>
                     <div className="vid-contain">
-                        <p className="video-text">What Does a $250,000 Golf Membership Look Like? Exclusive Florida Course</p>
+                        <p className="video-text">GHILLIE SUIT GOOSE HUNT CHALLENGE!!</p>
                     </div>
                 </div>
                 <div className="pervideo-container">
                     <iframe className="iframe-border" id="ytplayer" type="text/html" width="410" height="270"
-                        src="https://www.youtube.com/embed/wKShcCJzM8o"
+                        src="https://www.youtube.com/embed/863RwA9BP2Y"
                         frameborder="0">
                     </iframe>
                     <div className="vid-contain">
-                        <p className="video-text">HOW TO ARRANGE YOUR GOLF BAG the Right Way</p>
+                        <p className="video-text">A SOLO DUCK HUNT FOR THE BOOKS!</p>
                     </div>
                 </div>
             </div>

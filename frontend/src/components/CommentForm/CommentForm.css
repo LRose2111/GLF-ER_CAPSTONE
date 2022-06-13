@@ -35,19 +35,19 @@
   
   .comm-button {
     background-color: black;
-    color: darkred;
+    color: darkgrey;
     font-weight: bold;
     border-radius: 10px;
     padding: 3px 8px;
     margin-left: 0.8rem;
     font-size: 12.4px;
     border-color: black;
-    box-shadow: 4px 2px 5px darkred;
+    box-shadow: 4px 2px 5px darkgrey;
     margin-top: .1rem;
   }
 
   .comm-button:hover{
-    background-color: darkkhaki;
+    background-color: darkgrey;
   }
   
   .comm-but-contain {

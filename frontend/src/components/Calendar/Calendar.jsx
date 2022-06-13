@@ -19,20 +19,35 @@ let newcounter = null;
 
 const initial_events = [
  {
-   title: "Shangri-La Golf Club (10:00 a.m.)",
-   date: new Date("2022-06-22").toISOString().substring(0, 10)
+   title: "Teal: Hunting",
+   date: new Date("2022-06-20").toISOString().substring(0, 10)
  },
 
  {
-  title: "Neosho Golf Course (02:00 p.m.)",
-  date: new Date("2022-06-30").toISOString().substring(0, 10)
+  title: "Deer: Archery",
+  date: new Date("2022-06-19").toISOString().substring(0, 10)
 } ,
 
 {
-  title: "Elk River Country Club (10:00 a.m.)",
-  date: new Date("2022-06-14").toISOString().substring(0, 10)
-} 
+  title: "Deer: FireArms",
+  date: new Date("2022-06-18").toISOString().substring(0, 10)
+} ,
 
+{
+    title: "Greater Whie-Frontend Geese: Hunting",
+    date: new Date("2022-06-17").toISOString().substring(0, 10)
+},
+ 
+{
+   title: "Ducks, Coots, Geese: Hunting",
+   date: new Date("2022-06-15").toISOString().substring(0, 10)
+} ,
+ 
+{
+   title: "Turkey: Hunting",
+   date: new Date("2022-06-16").toISOString().substring(0, 10)
+} 
+ 
 ]
 
 class Calendar extends React.Component {
@@ -41,13 +56,12 @@ class Calendar extends React.Component {
 
     state = {
       events: [
-        { title: "Shangri-La Golf Club (10:00 a.m.)", id: "1"},
-        { title: "Shangri-La Golf Club (03:00 p.m.)", id: "2"},
-        { title: "Patricia Island Golf Club (10:00 a.m.)", id: "3"},
-        { title: "Patricia Island Golf Club (03:00 p.m.)", id: "4"},
-        { title: "Elk River Country Club (10:00 a.m.)", id: "5"},
-        { title: "Neosho Golf Course (03:00 p.m.)", id: "6"},
-        { title: "Elk River Country Club(02:00 p.m.)", id: "7"}
+        { title: "Teal: Hunting", id: "1"},
+        { title: "Deer: Archery", id: "2"},
+        { title: "Deer: FireArms", id: "3"},
+        { title: "Greater Whie-Frontend Geese: Hunting", id: "4"},
+        { title: "Ducks, Coots, Geese: Hunting", id: "5"},
+        { title: "Turkey: Hunting", id: "6"},
       ]
     };
   
@@ -71,26 +85,26 @@ class Calendar extends React.Component {
      * when we click on event we are displaying event details
      */
     eventClick = eventClick => {
-        if (eventClick.event.title == "Patrica Island Golf Club (10:00 a.m.)"){
+        if (eventClick.event.title == "Teal: Hunting"){
               newcounter = counter1;
      
         }
-        else if (eventClick.event.title == "Patrica Island Golf Club (03:00 p.m.)"){
+        else if (eventClick.event.title == "Deer: Archery"){
               newcounter = counter2;
         }
-        else if (eventClick.event.title == "Shangri-La Golf Club (10:00 a.m.)"){
+        else if (eventClick.event.title == "Deer: FireArms"){
               newcounter = counter3;
         }
-        else if (eventClick.event.title == "Shangri-La Golf Club (03:00 p.m.)"){
+        else if (eventClick.event.title == "Greater Whie-Frontend Geese: Hunting"){
               newcounter = counter4;
         }
-        else if (eventClick.event.title == "Elk River Country Club (10:00 a.m.)"){
+        else if (eventClick.event.title == "Ducks, Coots, Geese: Hunting"){
               newcounter = counter5;
         }
-        else if (eventClick.event.title == "Neosho Golf Course (03:00 p.m.)"){
+        else if (eventClick.event.title == "Turkey: Hunting"){
               newcounter = counter6;
         }
-        else if (eventClick.event.title == "Elk River Country Club (02:00 p.m.)"){
+        else if (eventClick.event.title == "Turkey: Hunting"){
               newcounter = counter7;
         }
       Alert.fire({
@@ -126,38 +140,38 @@ class Calendar extends React.Component {
       }).then(result => {
         if (result.isConfirmed) {
           eventClick.event.remove(); // It will remove event from the calendar
-          Alert.fire("Deleted", "Scheduled Course has been deleted.", "success");
+          Alert.fire("Deleted", "Scheduled Hunt has been deleted.", "success");
         }
         else if (result.isDenied){
-            if (eventClick.event.title == "Patrica Island Golf Club (10:00 a.m.)"){
+            if (eventClick.event.title == "Teal: Hunting"){
                 counter1 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
-            else if (eventClick.event.title == "Patrica Island Golf Club (03:00 p.m.)"){
+            else if (eventClick.event.title == "Deer: Archery"){
                 counter2 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
             
-            else if (eventClick.event.title == "Shangri-La Golf Course (10:00 a.m.)"){
+            else if (eventClick.event.title == "Deer: FireArms"){
                 counter3 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
-            else if (eventClick.event.title == "Shangri-La Golf Course (03:00 p.m.)"){
+            else if (eventClick.event.title == "Greater Whie-Frontend Geese: Hunting"){
                 counter4 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
             
-            else if (eventClick.event.title == "Elk River Country Club (10:00 a.m.)"){
+            else if (eventClick.event.title == "Ducks, Coots, Geese: Hunting"){
                 counter5 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
-            else if (eventClick.event.title == "Neosho Golf Course (03:00 p.m.)"){
+            else if (eventClick.event.title == "Turkey: Hunting"){
                 counter6 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
-            else if (eventClick.event.title == "Elk River Country Club (02:00 p.m.)"){
+            else if (eventClick.event.title == "Turkey: Hunting"){
                 counter7 += 1;
-                Alert.fire("Attendance Recorded", "Have fun on the links", "success");
+                Alert.fire("Attendance Recorded", "Lets HNT!", "success");
           }
             
         }
@@ -172,7 +186,7 @@ class Calendar extends React.Component {
           </div>
           <div className="fullcalen-contain">
             <div className='event-contain' id ="external-events">
-            <div className="event-title-bg"><medium className = 'courses-title-event'>Courses</medium></div>
+            <div className="event-title-bg"><medium className = 'courses-title-event'>Seasons</medium></div>
                   {this.state.events.map(event => (
                     <div
                       className="fc-event event-background"
@@ -197,7 +211,7 @@ class Calendar extends React.Component {
                   editable={true}
                   droppable={true}
                   plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-                  eventColor = 'orange'
+                  eventColor = 'grey'
                   eventTextColor="black"
                   eventDrop={this.drop}
                   eventReceive={this.eventReceive}

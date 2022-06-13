@@ -1,39 +1,33 @@
-
 .sidebar-bg{
     /* height: 135vh; */
-    height:fit-content;
+    height: 25vh;
     width:fit-content;
-    background-color: gold;
-    box-shadow: 4px 2px 5px gold;
+    background-color: grey;
+    box-shadow: 4px 2px 5px darkgrey;
     padding-top: 5.6rem;
 }
 
 .sav-text {
-    display:table-column-group;
-    justify-content:space-around;
-    align-items:flex-end;
-    padding: 5px 0px 5px 5px;
-    list-style: none;
-    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 20px 0px 10px 4px;
+    height: 50px;
+
   }
 
   .sav-text a {
-    text-decoration: none;
+    display: flex;
     color: black;
-    font-size:medium;
-    width:fit-content;
-    height:fit-content;
-    display:inherit;
-    align-items:initial;
-    padding:initial;
-    border-radius:initial;
+    flex-direction: column;
+    border-radius: 4px;
   }
 
   .sav-text a:hover {
-    background-color: black;
+    background-color: darkgrey;
     color:black;
   }
   
   span {
-    list-style: inside;
+    margin-left: 16px;
   }

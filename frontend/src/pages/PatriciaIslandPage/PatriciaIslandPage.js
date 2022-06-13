@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./PatriciaIslandPage.css";
 import SideBar from "../../components/SideBar/SideBar";
-import PatricaIsland from "../../components/PatricaIsland/PatricaIsland";
+import PatricaIsland from "../../components/FourRivers/FourRivers";
 
 
 const PatricaIslandPage = () => {

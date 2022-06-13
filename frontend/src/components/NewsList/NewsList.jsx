@@ -12,13 +12,13 @@ const NewsList = () => {
 
 
       async function getArticles(){
-        let response = await axios.get('https://newsapi.org/v2/everything?q=golf&sortBy=relevancyAt&pagesize=6&apiKey=4d1e7352fad2431a82995bd41bc85e37');
+        let response = await axios.get('https://newsapi.org/v2/everything?q=waterfowl&sortBy=relevancyAt&pagesize=6&apiKey=4d1e7352fad2431a82995bd41bc85e37');
         setArticles(response.data.articles);
       }
 
     return ( 
         <div className='entire-contain'>
-            <div className="news-title"><h3 className="">Golf News</h3></div>
+            <div className="news-title"><h3 className="">Hunting News</h3></div>
             <div>
                 <News articles = {articles}/>
             </div>

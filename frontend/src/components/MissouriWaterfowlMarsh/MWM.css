@@ -1,0 +1,43 @@
+.pi-image{
+    height: 300px;
+    width: 490px;
+    border-radius: 25px;
+    box-shadow: 4px 2px 5px black;
+}
+
+.pi-title{
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 4.2%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+ }
+
+.pi-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: red; */
+    column-gap: 7.3rem;
+    margin-top: 7rem;
+}
+
+.pi-image-contain{
+    margin-left: 15.3rem;
+    margin-top: 2.6rem;
+}
+
+ .pi-map-contain{
+     max-width: 550px;
+     margin-top: 2.6rem;
+ }
+
+ .about-listing{
+    padding-top: .6rem;
+    margin-left: 1.7rem;
+    font-size: 18.3px;
+
+}
+

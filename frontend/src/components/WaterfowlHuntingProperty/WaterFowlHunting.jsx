@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import './ShangriLa.css';
+import './WaterFowlHunting.css';
 import { Link } from "react-router-dom";
-import ShangriLaMap from "../GoogleMaps/ShangriLaMap";
+import WHPMap from "../GoogleMaps/WHPMap";
 import axios from "axios";
-import CommentForm from "../../components/CommentForm/CommentForm";
+import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
-import LikeIndicator from "../LikeIndicator/LikeIndicator";
 import useAuth from "../../hooks/useAuth";
 
-const ShangriLa = () => {
+const WHP = () => {
     const [courseId, setCourseId] = useState(4);
     const [allComments, setAllComments] = useState([]);
     const [course, setCourse] = useState([]);
@@ -85,19 +84,21 @@ const ShangriLa = () => {
     return ( 
         <div className="entire-contain">
           <div>
-              <div><h3 className="shangri-title">Shangri-La Golf Club</h3></div>
+              <div><h3 className="pi-title">WaterFowl Hunting Property</h3></div>
           </div>
-        <div className="shangri-contain">
-            <div className="shangri-image-contain">
-                <img src ="/images/SGC.jpg" className = "shangri-image" alt = "shangri course"/>
+        <div className="pi-contain">
+            <div className="pi-image-contain">
+                <img src ="/images/WHP.jpg" className = "pi-image" alt = "pi course"/>
             </div>
-            <div className="shangri-map-contain">
-                <ShangriLaMap/>
+            <div className="pi-map-contain">
+                <WHPMap/>
             </div>
         </div>
+        <div className="about-listing"><h3 className="">1000 Acres of prime hunting property!</h3></div>
+        <div className="about-listing"><h3 className="">Price: $10000 | Currently Available | Message to Book </h3></div>
         <div>
         <div>
-            <LikeIndicator postLike = {postLike} postDisLike = {postDisLike} course = {course} getCourse = {getCourse}/></div>
+        </div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>
@@ -107,4 +108,4 @@ const ShangriLa = () => {
      );
 }
  
-export default ShangriLa;
+export default WHP;

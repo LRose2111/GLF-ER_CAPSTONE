@@ -7,8 +7,8 @@ const SplashTop = () => {
     return ( 
         <div className='splash-top-contain'>
             <div className='splash-title' id='leasesplash'>
-                Golf Scrambles in the Area
-                <div className='down-arrow'><Link to = "aboutsite" spy={true} smooth={true} offset={50} duration={500}><BsChevronDown color='gold' size='7.7rem'/></Link></div>
+                Hunts in the SW Missouri
+                <div className='down-arrow'><Link to = "aboutsite" spy={true} smooth={true} offset={50} duration={500}><BsChevronDown color='black' size='7.7rem'/></Link></div>
             </div>
 
         </div>

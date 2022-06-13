@@ -15,7 +15,7 @@ const CommentForm = (props) => {
   
     return (  
     <div className="comm-form-contain">
-      <div className="comment-form-question">What do you think about the Course?</div>
+      <div className="comment-form-question">What do you think about this Hunting Area?</div>
       <form className="comm-form" onSubmit={handleSubmit}>
         <div>
             <label className = 'comment-label' htmlFor="Comment">Review:{" "}</label>

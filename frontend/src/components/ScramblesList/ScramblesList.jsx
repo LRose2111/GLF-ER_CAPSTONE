@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './ScramblesList.css';
 import axios from "axios";
 import useAuth from "../../hooks/useAuth";
-import Scrambles from "../Scrambles/Scrambles";
+import Scrambles from "../PrivateLand/Scrambles";
 
 
 const ScramblesList = () => {
@@ -27,7 +27,7 @@ const ScramblesList = () => {
 
     return ( 
         <div className="entire-contain">
-            <div className="scram-title"><h3 className="">Scrambles</h3></div>
+            <div className="scram-title"><h3 className="">Listings</h3></div>
             <div className="scram-contain">
                 <div><Scrambles scrambles = {scrambles}/></div>
             </div>

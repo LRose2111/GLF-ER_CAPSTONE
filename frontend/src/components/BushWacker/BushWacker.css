@@ -1,11 +1,11 @@
-.shangrila-image{
+.shangri-image{
     height: 300px;
     width: 490px;
     border-radius: 25px;
     box-shadow: 4px 2px 5px black;
 }
 
-.shangrila-title{
+.shangri-title{
     color: white;
     margin: 0;
     position: fixed;
@@ -16,7 +16,7 @@
     z-index: 10;
  }
 
-.shangrila-contain{
+.shangri-contain{
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* background-color: red; */
@@ -24,12 +24,12 @@
     margin-top: 7rem;
 }
 
-.shangrila-image-contain{
+.shangri-image-contain{
     margin-left: 15.3rem;
     margin-top: 2.6rem;
 }
 
- .shangrila-map-contain{
+ .shangri-map-contain{
      max-width: 550px;
      margin-top: 2.6rem;
  }

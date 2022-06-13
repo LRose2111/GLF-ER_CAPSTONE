@@ -21,7 +21,7 @@
  }
 
  .event-contain{
-     background-color: ghostwhite;
+     background-color: lightgrey;
      margin-left: 5rem;
      margin-top: 5rem;
      padding-right: 2rem;
@@ -30,7 +30,7 @@
  }
 
  .event-background{
-     background-color: gold;
+     background-color: darkgrey;
      width: 204px;
      font-size: 15px;
      text-align: center;

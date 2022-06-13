@@ -1,7 +1,7 @@
 import React from "react";
 import {InfoWindow, withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps";
 
-class NeoshoMap extends React.Component {
+class SWMOMap extends React.Component {
 
     render(){
 
@@ -33,4 +33,4 @@ class NeoshoMap extends React.Component {
     
 }
  
-export default NeoshoMap;
+export default SWMOMap;

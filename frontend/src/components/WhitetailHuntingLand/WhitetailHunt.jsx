@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import './Neosho.css';
+import './WhitetailHunt.css';
 import { Link } from "react-router-dom";
-import NeoshoMap from "../GoogleMaps/NeoshoMap";
+import WTMap from "../GoogleMaps/WTMap";
 import axios from "axios";
-import CommentForm from "../../components/CommentForm/CommentForm";
+import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
-import LikeIndicator from "../LikeIndicator/LikeIndicator";
 import useAuth from "../../hooks/useAuth";
 
-const Neosho = () => {
+const Whitetail = () => {
     const [courseId, setCourseId] = useState(4);
     const [allComments, setAllComments] = useState([]);
     const [course, setCourse] = useState([]);
@@ -85,19 +84,21 @@ const Neosho = () => {
     return ( 
         <div className="entire-contain">
           <div>
-              <div><h3 className="n-title">Neosho Golf Course</h3></div>
+              <div><h3 className="pi-title">WhiteTail Hunting Property</h3></div>
           </div>
-        <div className="n-contain">
-            <div className="n-image-contain">
-                <img src ="/images/NGC.jpg" className = "n-image" alt = "n course"/>
+        <div className="pi-contain">
+            <div className="pi-image-contain">
+                <img src ="/images/WT.jpg" className = "pi-image" alt = "pi course"/>
             </div>
-            <div className="n-map-contain">
-                <NeoshoMap/>
+            <div className="pi-map-contain">
+                <WTMap/>
             </div>
         </div>
+        <div className="about-listing"><h3 className="">100 Acres of prime hunting property!</h3></div>
+        <div className="about-listing"><h3 className="">Price: $2400| Currently Available | Message to Book </h3></div>
         <div>
         <div>
-            <LikeIndicator postLike = {postLike} postDisLike = {postDisLike} course = {course} getCourse = {getCourse}/></div>
+        </div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>
@@ -107,4 +108,4 @@ const Neosho = () => {
      );
 }
  
-export default Neosho;
+export default Whitetail;

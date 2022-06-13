@@ -9,23 +9,23 @@ li {
 }
 
 .navBar {
-  background: gold;
+  background: darkgrey;
   box-shadow: 4px 2px 5px darkgrey;
-  color: white;
+  color: black;
   margin-bottom: 2rem;
   padding: 1.5rem 2rem;
 }
 
 .navBar button {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
+  background: black;
+  border: 2px solid black;
+  color: darkred;
   padding: 0.4rem 0.5rem;
 }
 
 .navBar button:hover {
-  background: white;
-  color: gold;
+  background: darkgrey;
+  color: black;
   cursor: pointer;
 }
 

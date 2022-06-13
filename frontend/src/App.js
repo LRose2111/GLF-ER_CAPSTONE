@@ -20,9 +20,13 @@ import NeoshoPage from "./pages/NeoshoPage/NeoshoPage";
 import PatricaIslandPage from "./pages/PatriciaIslandPage/PatriciaIslandPage";
 import ShangriLaPage from "./pages/ShangriLaPage/ShangriLaPage";
 import ElkRiverPage from "./pages/ElkRiverPage/ElkRiverPage";
-import ScramblePage from "./pages/ScramblePage/ScramblePage";
+import ScramblePage from "./pages/ListingPage/ScramblePage";
 import About from "./pages/About/About";
 import GolfNews from "./pages/GolfNews/GolfNews";
+import MWMPage from "./pages/MWMPage/MWM";
+import SWMOPage from "./pages/SWMOPage/SWMO";
+import WHPage from "./pages/WHPage/WH";
+import WTPage from "./pages/WTPage/WT";
 
 function App() {
   return (
@@ -40,15 +44,19 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/default" element={<SplashPage />} />
-        <Route path="/courses" element={<PrivateRoute><CoursePage /></PrivateRoute>} />
+        <Route path="/publicland" element={<PrivateRoute><CoursePage /></PrivateRoute>} />
         <Route path="/videos" element={<PrivateRoute><VideoPage /></PrivateRoute>} />
-        <Route path="/course/elkriver" element={<PrivateRoute><ElkRiverPage /></PrivateRoute>} />
-        <Route path="/course/neosho" element={<PrivateRoute><NeoshoPage/></PrivateRoute>} />
-        <Route path="/course/shangrila" element={<PrivateRoute><ShangriLaPage /></PrivateRoute>} />
-        <Route path="/course/patricaisland" element={<PrivateRoute><PatricaIslandPage /></PrivateRoute>} />
-        <Route path="/scrambles" element={<PrivateRoute><ScramblePage /></PrivateRoute>} />
+        <Route path="/publicland/shawnee" element={<PrivateRoute><ElkRiverPage /></PrivateRoute>} />
+        <Route path="/publicland/schell" element={<PrivateRoute><NeoshoPage/></PrivateRoute>} />
+        <Route path="/publicland/bushwacker" element={<PrivateRoute><ShangriLaPage /></PrivateRoute>} />
+        <Route path="/publicland/fourrivers" element={<PrivateRoute><PatricaIslandPage /></PrivateRoute>} />
+        <Route path="/listing/mwm" element={<PrivateRoute><MWMPage /></PrivateRoute>} />
+        <Route path="/listing/whp" element={<PrivateRoute><WHPage/></PrivateRoute>} />
+        <Route path="/listing/swmo" element={<PrivateRoute><SWMOPage /></PrivateRoute>} />
+        <Route path="/listing/wt" element={<PrivateRoute><WTPage /></PrivateRoute>} />
+        <Route path="/listings" element={<PrivateRoute><ScramblePage /></PrivateRoute>} />
         <Route path="/about" element={<PrivateRoute><About /></PrivateRoute>} />
-        <Route path="/golfnews" element={<PrivateRoute><GolfNews /></PrivateRoute>} />
+        <Route path="/news" element={<PrivateRoute><GolfNews /></PrivateRoute>} />
       </Routes>
       <Footer />
     </div>

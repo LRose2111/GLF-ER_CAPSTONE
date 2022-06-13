@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import SideBar from "../../components/SideBar/SideBar";
 import Calendar from "../../components/Calendar/Calendar";
 import "./HomePage.css";
+import BetterMap from "../../components/GoogleMaps/BetterMap";
 
 
 const HomePage = () => {

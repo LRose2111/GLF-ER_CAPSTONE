@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./NeoshoPage.css";
 import SideBar from "../../components/SideBar/SideBar";
-import Neosho from "../../components/Neosho/Neosho";
+import Neosho from "../../components/SchellOsage/SchellOsage";
 
 
 const NeoshoPage = () => {

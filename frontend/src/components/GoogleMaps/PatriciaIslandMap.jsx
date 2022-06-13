@@ -8,13 +8,13 @@ class PIMap extends React.Component {
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
               defaultZoom={12}
-              defaultCenter={{ lat: 36.593502, lng: -94.831101 }}
+              defaultCenter={{ lat: 38.018438, lng: -94.331667 }}
             >
               <Marker
-                position={{ lat: 36.593502, lng: -94.831101 }}
+                position={{ lat: 38.018438, lng: -94.331667 }}
               >
                 <InfoWindow>
-                  <div className="google-title">4980 Clubhouse Rd, Grove, OK 74344</div>
+                  <div className="google-title">Rich Hill, MO 64779</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>
@@ -22,7 +22,7 @@ class PIMap extends React.Component {
           
         return(
         <MapWithAMarker
-        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH1gmInWAU-tcTIcexR8Vnt0pNOA-H1Co"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw5U3mNEBGPNCwHmjJF40V4KVHNWUCnvA"
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `300px` }} />}
         mapElement={<div style={{ height: `100%`, borderRadius: `20px`, boxShadow:  '4px 2px 5px black', width: `500px` }} />}

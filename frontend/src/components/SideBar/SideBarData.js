@@ -13,9 +13,9 @@ export const SideBarData = [
         path: "/default"
     },
     {
-        title: 'Courses',
-        path: '/courses',
-        icon: <GiIcons.GiGolfTee />,
+        title: 'Public Land',
+        path: '/publicland',
+        icon: <GiIcons.GiDuck />,
       },
       {
         title: 'Calendar',
@@ -23,18 +23,18 @@ export const SideBarData = [
         icon: <BsIcons.BsCalendarDay />,
       },
       {
-        title: 'Golf Videos',
+        title: 'Huntr Videos',
         path: '/videos',
         icon: <FaIcons.FaVideoSlash />,
       },
       {
-        title: 'Scrambles',
-        path: '/scrambles',
-        icon: <IoIcons5.IoPeopleSharp />,
+        title: 'Listings',
+        path: '/listings',
+        icon: <IoIcons5.IoMapOutline />,
       },
       {
-        title: 'Golf News',
-        path: '/golfnews',
+        title: 'Huntr News',
+        path: '/news',
         icon: <BsIcons.BsNewspaper />,
       },
       {

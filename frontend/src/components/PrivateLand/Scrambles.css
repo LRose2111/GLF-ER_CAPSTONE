@@ -1,7 +1,7 @@
-.courts-title{
-    color: white;
+.courses-title{
+    color: black;
     margin: 0;
-    position: fixed;
+    position:fixed;
     top: 4.4%;
     left: 53.5%;
     -ms-transform: translate(-50%, -50%);
@@ -9,8 +9,8 @@
     z-index: 10;
  }
 
- .courtlist-contr{
-     display: grid;
+ .courselist-contr{
+     display:grid;
      grid-template-columns: 1fr 1fr;
      column-gap: 8rem;
      row-gap: 5rem;
@@ -18,22 +18,22 @@
      margin-top: 9rem;
  }
 
- .court-image{
+ .course-image{
      height: 300px;
      width: 500px;
      opacity: 1;
-     display: block;
+     display:grid;
      transition: .5s ease;
      backface-visibility: hidden;
      border-radius: 25px;
      box-shadow: 4px 2px 5px black;
  }
 
- .court-image:hover{
+ .course-image:hover{
      opacity: 0.3;
  }
 
- .list-courts-title{
+ .list-course-title{
      text-align: center;
      margin-top: 1rem;
      font-size: 20px;
@@ -44,7 +44,7 @@
     position: relative;
  }
 
- .container-hov:hover .court-image{
+ .container-hov:hover .course-image{
     opacity: 0.3;
  }
 
@@ -64,12 +64,12 @@
 
   .middle-text {
     background-color:black;
-    color: orange;
+    color: darkred;
     font-weight: bold;
     font-size: 17px;
     padding: 5px 10px;
     border-radius: 10px;
     border-style: solid;
     border-color: black;
-    box-shadow: 4px 2px 5px orange;
+    box-shadow: 4px 2px 5px darkred;
   }
