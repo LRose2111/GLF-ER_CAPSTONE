@@ -8,13 +8,13 @@ class WTMap extends React.Component {
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
               zoom={12}
-              defaultCenter={{ lat: 38.007893, lng: -94.087186 }}
+              defaultCenter={{ lat: 37.415265, lng: -94.560618 }}
             >
               <Marker
-                position={{ lat: 38.007893, lng: -94.087186 }}
+                position={{ lat: 37.415265, lng: -94.560618 }}
               >
                 <InfoWindow>
-                  <div className="google-title">4662 S 2950 Rd, Schell City, MO 64783</div>
+                  <div className="google-title">South West Township, MO</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>

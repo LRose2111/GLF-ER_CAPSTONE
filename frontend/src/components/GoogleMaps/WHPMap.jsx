@@ -8,13 +8,13 @@ class WHPMap extends React.Component {
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
               zoom={12}
-              defaultCenter={{ lat: 38.007893, lng: -94.087186 }}
+              defaultCenter={{ lat: 37.481007, lng: -94.504627 }}
             >
               <Marker
-                position={{ lat: 38.007893, lng: -94.087186 }}
+                position={{ lat: 37.481007, lng: -94.504627 }}
               >
                 <InfoWindow>
-                  <div className="google-title">4662 S 2950 Rd, Schell City, MO 64783</div>
+                  <div className="google-title">Prairie Center Farm Lake, Ozark Township, MO 64762</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>

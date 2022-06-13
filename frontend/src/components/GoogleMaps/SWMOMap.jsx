@@ -8,13 +8,13 @@ class SWMOMap extends React.Component {
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
               zoom={12}
-              defaultCenter={{ lat: 38.007893, lng: -94.087186 }}
+              defaultCenter={{ lat: 36.561215, lng: -94.446889 }}
             >
               <Marker
-                position={{ lat: 38.007893, lng: -94.087186 }}
+                position={{ lat: 36.561215, lng: -94.446889 }}
               >
                 <InfoWindow>
-                  <div className="google-title">4662 S 2950 Rd, Schell City, MO 64783</div>
+                  <div className="google-title">Pineville South Township, MO 64854</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>
