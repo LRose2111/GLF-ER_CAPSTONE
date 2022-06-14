@@ -6,6 +6,7 @@ import axios from "axios";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
 import useAuth from "../../hooks/useAuth";
+import StarRating from "../Rating/Rating";
 
 const Neosho = () => {
     const [courseId, setCourseId] = useState(4);
@@ -95,6 +96,7 @@ const Neosho = () => {
             </div>
         </div>
         <div>
+        <div><StarRating/></div>
         <div>
           </div>
         </div>

@@ -16,7 +16,7 @@ class Course(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  
     text = models.CharField(max_length=255)
-    course_id = models.IntegerField()
+
 
 
 class Reply(models.Model):

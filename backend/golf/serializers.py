@@ -11,7 +11,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Course
+        model = Course 
         fields = ['id', 'name', 'address', 'city', 'state', 'zipcode', 'likes', 'dislikes']
         depth = 1
 
@@ -20,7 +20,7 @@ class CommentSerializer(serializers.ModelSerializer):
     user = UserSerializer(many =False, read_only=True)
     class Meta:
         model = Comment
-        fields = ['id', 'text', 'course_id', 'user']
+        fields = ['id', 'text', 'user']
         depth = 1
     
 class PaymentSerializer(serializers.ModelSerializer):

@@ -8,7 +8,7 @@ const SplashTop = () => {
         <div className='splash-top-contain'>
             <div className='splash-title' id='leasesplash'>
                 Hunts in the SW Missouri
-                <div className='down-arrow'><Link to = "aboutsite" spy={true} smooth={true} offset={50} duration={500}><BsChevronDown color='black' size='7.7rem'/></Link></div>
+                <div className='down-arrow'><Link to = "aboutsite" spy={true} smooth={true} offset={50} duration={500}><BsChevronDown color='red' size='10rem'/></Link></div>
             </div>
 
         </div>

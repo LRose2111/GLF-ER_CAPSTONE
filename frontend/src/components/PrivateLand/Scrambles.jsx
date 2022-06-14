@@ -1,11 +1,12 @@
 import react from "react";
 import './Scrambles.css';
 import { Link } from "react-router-dom";
+import AddNewListing from "./AddListing";
 
 const PrivateLand = () => {
     return ( 
         <div className="entire-contain">
-            <div className="courses-title"><h3>Local Listings</h3></div>
+            <div className="courses-title"><h3>Local Listings in SW Missouri</h3></div>
             <div className="courselist-contr">
                 <div className="container-hov">
                     <Link to ="/listing/mwm"><img src ="/images/MWM.jpg" className = "course-image" alt = "pi course"/></Link>
@@ -36,6 +37,9 @@ const PrivateLand = () => {
                     <div className="list-course-title">SW MO Hunting Land </div>
                 </div>
             </div>
+            <div>
+            <div><AddNewListing/></div>
+        </div>
         </div>
      );
 }

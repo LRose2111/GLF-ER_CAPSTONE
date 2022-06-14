@@ -6,6 +6,7 @@ import axios from "axios";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
 import useAuth from "../../hooks/useAuth";
+import StarRating from "../Rating/Rating";
 
 const Whitetail = () => {
     const [courseId, setCourseId] = useState(4);
@@ -95,10 +96,14 @@ const Whitetail = () => {
             </div>
         </div>
         <div className="about-listing"><h3 className="">100 Acres of prime hunting property!</h3></div>
-        <div className="about-listing"><h3 className="">Price: $2400| Currently Available | Message to Book </h3></div>
+        <div className="about-listing"><h3 className="">Price: $2400| Currently Available </h3></div>
         <div>
         <div>
+        <div className="comm-but-contain">
+            <button type = 'submit' className="comm-button">Book</button>
         </div>
+        </div>
+        <div><StarRating/></div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>

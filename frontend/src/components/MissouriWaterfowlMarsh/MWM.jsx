@@ -6,6 +6,9 @@ import axios from "axios";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
 import useAuth from "../../hooks/useAuth";
+import StarRating from "../Rating/Rating";
+
+
 
 const MWM = () => {
     const [courseId, setCourseId] = useState(4);
@@ -21,7 +24,7 @@ const MWM = () => {
     
 
     async function getAllComments(){
-    let response = await axios.get(`http://127.0.0.1:8000/comment/${courseId}/`, {
+    let response = await axios.get(`http://127.0.0.1:8000/comment`, {
         headers: {
         Authorization: 'Bearer ' + token
         }
@@ -46,7 +49,7 @@ const MWM = () => {
             text: text,
             course_id: courseId,
           }
-        let response = await axios.post(`http://127.0.0.1:8000/course/`, newComment, {
+        let response = await axios.post(`http://127.0.0.1:8000/comment`, newComment, {
           headers: {
             Authorization: 'Bearer ' + token
           }
@@ -95,10 +98,14 @@ const MWM = () => {
             </div>
         </div>
         <div className="about-listing"><h3 className="">100 Acres of prime waterfowl property!</h3></div>
-        <div className="about-listing"><h3 className="">Price: $5000 | Currently Available | Message to Book </h3></div>
+        <div className="about-listing"><h3 className="">Price: $5000 | Currently Available  </h3></div>
         <div>
         <div>
+          <div className="comm-but-contain">
+            <button type = 'submit' className="comm-button">Book</button>
         </div>
+        </div>
+        <div><StarRating/></div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>

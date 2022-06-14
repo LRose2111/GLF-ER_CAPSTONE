@@ -29,13 +29,13 @@ class CoursesActions(APIView):
 @permission_classes([IsAuthenticated])
 class CommentActions(APIView):
 
-    def get(self, request, pk):
-        course_comments = Comment.objects.filter(course_id = pk)
-        serializers = CommentSerializer(course_comments, many=True)
+    def get(self, request, format=None):
+        comments = Comment.objects.all()
+        serializers = CommentSerializer(comments, many=True)
         return Response(serializers.data, status=status.HTTP_200_OK)
 
-    def delete(self, request, pk, format=None):
-        comment = get_object_or_404(Comment, pk=pk)
+    def delete(self, request, id, format=None):
+        comment = get_object_or_404(Comment, id=id)
         comment.delete()
         return Response(status=status.HTTP_200_OK)
 
@@ -100,3 +100,10 @@ class Scrambles(APIView):
         ccgames = Scrambles.objects.all()
         serializers = ScramblesSerializer(ccgames, many=True)
         return Response(serializers.data, status=status.HTTP_200_OK)
+
+class CreateListing(APIView, IsAuthenticated):
+        def post(self, request, format=None):
+            serializer = CourseSerializer(data=request.data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
